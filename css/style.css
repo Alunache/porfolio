@@ -7,10 +7,15 @@
     --primary-text:#212121;
     --secondary-text:#757575;
     --divider-color:#BDBDBD;
+    --body-font: 'Oswald', sans-serif;
+    --title-font: 'Open Sans', sans-serif;
+
+
 }
 
 body{
     margin: 0;
     padding: 0;
-    background: var(--light-primary-color)
+    background: var(--light-primary-color);
+    font-family: var(--body-font);
 }
