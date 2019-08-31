@@ -20,6 +20,13 @@ h1{
     color: var(--text)
 }
 
+h2 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
 
 .header {
     display: flex;
@@ -65,13 +72,6 @@ h1{
     padding: 20px;
 }
 
-.portafolio h2 {
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 35px;
-}
 
 .project {
     border: 1px solid grey;
@@ -135,6 +135,10 @@ h1{
 .project-img-container {
     border: 2px solid blue;
     width: 500px;
+}
+
+.experiencia {
+
 }
 
 .footer{
