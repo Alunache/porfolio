@@ -205,7 +205,48 @@ h1{
 
 }
 
+.contact{
+    background: var(--primary-color);
+    color: var(--text);
+    height: 150px;
+    display: flex;
+    align-items: center;
 }
+
+.contact-form-label{
+    display: block;
+}
+
+.social-container{
+    /* border: 1px solid red;  era borde para ver esta vaina, se quita*/
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    background-size: 50px 50px; /*para que el tamaño del fondo sea especifico, sin 
+    este,eñ fndo de imagen seria muy grande*/
+}
+
+.social-link.facebook /*al borrar el espacio entre social link y fb,
+indicamos que solo los elementos que tengan esas dos clases en especifico tomen 
+las caracteristicas, si falta caulquiera, no funcionara*/{
+    background-image: url("../img/icon-fb.svg");
+}
+.social-link.twitter {
+    background-image: url("../img/icon-twitter.svg")
+}
+.social-link.instangram {
+    background-image: url("../img/icon-insta.svg")
+}
+.social-link.github {
+    background-image: url("../img/icon-github.svg")
+}
+
+
+
 
 .footer{
     background: var(--dark-primary-color);
