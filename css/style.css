@@ -184,6 +184,29 @@ h1{
     pregunte a simon y dijo mis huevos*/
 }
 
+.experience-url {
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: 450 ms all; /* 450 ms= 450 milesegundos, sirve para cuando hya un cambio relacionado con
+    hover, u otro, tardara 450 milesegundos en ejecutarse. all=a todo, en este caso, toda la transicion
+    va a tener la misma velocidad  (cubic-bezier.com)*/
+
+
+}
+
+.experience-url:hover{ /*experience-url es una clase (class) y hover es una subclase, significa que
+    habra cambios de comportamiento al ponerle el mouse encima*/
+    background: var(--primary-color);
+    color: white; /*color del texto va a cambiar a esto cuendo hover*/
+
+
+}
+
+}
+
 .footer{
     background: var(--dark-primary-color);
     color: var(--text);
