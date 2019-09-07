@@ -215,6 +215,9 @@ h1{
 
 .contact-form-label{
     display: block;
+    font-weight: bold;
+    font-size: 22px;
+    
 }
 
 .contact-form-email {
@@ -227,13 +230,13 @@ h1{
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
+    margin: 15px 0px
 }
 
 .contact-form-button {
     text-transform: uppercase;
     font-size: 12px;
     display: block;
-    margin-top: 5px;
     background: transparent;
     color: var(--text);
     border-radius: 5px;
