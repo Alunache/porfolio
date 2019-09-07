@@ -29,6 +29,22 @@ h2 {
     margin-bottom: 35px;
 }
 
+/* *clases utilitarias */
+.wrapper {
+    /* border: 1px solid red;  se uso para guiarse en el wrapper, descontinuado por motivos esteticos*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit; /* inherit es una cosa maravillosa que sirve para heredar 
+    las caracteristicas del padre. es muy util en display, justify content, y aling*/
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: inherit; /* flex-wrap sirve para que los elementos de un wrap no se salga 
+    de este, sino que se reacomoden automaicamente segun el tamaño del wrap
+    
+    flex-wrap ayuda un chingos cuando trabajremos versiones moviles porque reacomoda automaticamente 
+    el tmmaño de los elementos a la pantlla del celular*/
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -56,7 +72,7 @@ h2 {
     /* border: 2px solid lime; */
     height: 300px;
     background: var(--primary-color);
-    background-image: url(../img/hero.jpg);
+    /* background-image: url(../img/hero.jpg);  se le quito para que funcione con wrapper*/
     background-size: 500px 300px; 
     background-repeat: no-repeat;
     background-position-x: right;
@@ -142,6 +158,8 @@ h1{
 
 .experience-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
@@ -211,6 +229,7 @@ h1{
     height: 150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .contact-form-label{
