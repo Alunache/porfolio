@@ -44,6 +44,8 @@ h2 {
     flex-wrap ayuda un chingos cuando trabajremos versiones moviles porque reacomoda automaticamente 
     el tmmaño de los elementos a la pantlla del celular*/
     flex: 1;
+    flex-direction: inherit;
+
 }
 
 .header {
@@ -235,11 +237,11 @@ h1{
 .contact{
     background: var(--primary-color);
     color: var(--text);
-    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 .contact-form-label{
@@ -355,6 +357,18 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     }
     .hero{
         padding: 60px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .footer {
+        flex-direction: column;
     }
 
 }
