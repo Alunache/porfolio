@@ -1,3 +1,38 @@
+/* external CSS */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?3ot2jt');
+    src:  url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?3ot2jt') format('truetype'),
+      url('../fonts/icomoon.woff?3ot2jt') format('woff'),
+      url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
+/* my CSS */
+
 :root {
     --body-color: #ffebee;
     --dark-primary-color: #D32F2F;
@@ -45,7 +80,23 @@ h2 {
     el tmmaño de los elementos a la pantlla del celular*/
     flex: 1;
     flex-direction: inherit;
+    padding: 0.5rem;
+}
 
+.burger-button {
+    font-size: 40px;
+    color: white;
+    background: var(--dark-primary-color);
+    widows: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
 }
 
 .header {
@@ -153,9 +204,26 @@ h1{
 }
 
 .project-details {
-    border: 2px solid red;
-    width: 500px;
+    /* border: 2px solid red; */
+    width: 50%;
+    font-size: 16px;
 }
+.project-title {
+    font-size: 2em;
+}
+
+.project-subtitle{
+    font-size: 1.5em;
+}
+.project-date, .project-url {
+    font-size: 0.8em;
+}
+
+.project-description {
+    font-size: 1em;
+}
+
+
 
 .project-img-container {
     /* border: 2px solid blue; */
@@ -358,6 +426,10 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     .hero{
         padding: 60px;
     }
+
+    .project-details {
+        font-size: 14px;
+    }
     .contact {
         flex-direction: column;
     }
@@ -376,6 +448,9 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
 @media screen and (max-width: 320px) {
     h1 {
         font-size: 20px;
+    }
+    .project-details{
+        font-size: 12px;
     }
     
 }
