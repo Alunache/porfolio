@@ -96,7 +96,7 @@ h2 {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 1;
+    z-index: 999;
 }
 
 .header {
@@ -396,9 +396,7 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     .header{
         display: block;
     }
-    .header ul {
-        display: block;
-    }
+   
     .header li {
         text-align: center;
     }
@@ -416,6 +414,37 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     }
     .experience{
         width: 90%;
+    }
+    .burger-button{
+        display: flex;
+    }
+    .menu {
+        position: fixed;
+        background: var(--dark-primary-color);
+        z-index: 666;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .navbar-ul{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar-item{
+        font-size:36px;
     }
 }
 
