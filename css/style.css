@@ -32,7 +32,7 @@ h2 {
 /* *clases utilitarias */
 .wrapper {
     /* border: 1px solid red;  se uso para guiarse en el wrapper, descontinuado por motivos esteticos*/
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit; /* inherit es una cosa maravillosa que sirve para heredar 
     las caracteristicas del padre. es muy util en display, justify content, y aling*/
@@ -43,6 +43,7 @@ h2 {
     
     flex-wrap ayuda un chingos cuando trabajremos versiones moviles porque reacomoda automaticamente 
     el tmmaño de los elementos a la pantlla del celular*/
+    flex: 1;
 }
 
 .header {
@@ -52,6 +53,7 @@ h2 {
     color: var(--text);
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .header ul {
     list-style: none;
@@ -70,14 +72,16 @@ h2 {
 
 .hero {
     /* border: 2px solid lime; */
-    height: 300px;
-    background: var(--primary-color);
-    /* background-image: url(../img/hero.jpg);  se le quito para que funcione con wrapper*/
-    background-size: 500px 300px; 
+    background-color: var(--primary-color);
     background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-position-x: right; se quito para que ocupe el fondo de hero*/
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../img/hero.jpg); /* se le agrego para que ya no sea elemento html*/
+    background-size: 100% auto; 
+    padding: 100px 0;
+    background-position: center;
 }
 
 .hero strong{
@@ -105,6 +109,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .project-details {
     /* border: 2px solid red; */
@@ -230,6 +235,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-form-label{
@@ -299,6 +305,7 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     align-items: center;
     margin: 0px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .footer a {
@@ -312,7 +319,18 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
 }
 
 @media screen and (max-width: 767px) {
-
+    .header{
+        display: block;
+    }
+    .header ul {
+        display: block;
+    }
+    .header li {
+        text-align: center;
+    }
+    .logo {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
