@@ -1,7 +1,7 @@
 :root {
     --body-color: #ffebee;
     --dark-primary-color: #D32F2F;
-    --light-primary-color: #FFCDD2;
+    --light-primary-color: ##FFE0B2;
     --primary-color: #F44336;
     --text:#FFFFFF;
     --accent-color:#00BCD4;
@@ -291,9 +291,6 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     background-image: url("../img/icon-github.svg")
 }
 
-
-
-
 .footer{
     background: var(--dark-primary-color);
     color: var(--text);
@@ -309,3 +306,19 @@ las caracteristicas, si falta caulquiera, no funcionara*/{
     color: var(--text);
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
